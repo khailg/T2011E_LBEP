@@ -1,25 +1,15 @@
 #include <stdio.h>
 int main (){
 	int n;
-	printf("Nhap so n= ");
+	printf("nhap n= ");
 	scanf("%d",&n);
-	
-	if((n>1000) && (n<9999) || (n<-1000) && (n>-9999)){
-		int a;
-		a= (n%10)*1000 + ((n/10)%10)*100 + (((n/10)/10)%10)*10 + (n/1000);
-		printf("KQ : %d",a);
-	}
-	if(n==0){
-		printf("KQ : %d",n);
-	}
-	if((n>100) && (n<1000) || (n<-100) && (n>-1000)){
-		int a;
-		a= (n%10)*100 + ((n/10)%10)*10 +  (n/100);
-		printf("KQ : %d",a);
-	}
-	if((n>10) && (n<100) || (n<-10) && (n>-100)){
-		int a;
-		a= (n%10)*10 +  (n/10);
-		printf("KQ : %d",a);
+	for(int i=0;i<n;i++){
+	 	if(n%2==0){
+	 		printf("So chan ay la : %d \n",n-2);
+	 		break;
+		 }else{
+		 	printf("so chan ay la : %d \n",n-1);
+		 	break;
+		 }
 	}
 }
